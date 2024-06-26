@@ -1,0 +1,480 @@
+@font-face {
+    font-family: myfont;
+    src: url(Sansation_Regular.ttf);
+}
+
+body {
+    font-family: myfont;
+    margin: 0;
+    padding: 0;
+}
+
+.header1 {
+    background:#3498db;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.header2 {
+    background:#f39c12;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.header3{
+    background:#2ecc71;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.circle, .square {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+}
+
+.circle:hover, .square:hover{
+    opacity: 0.5;
+}
+
+.square {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+    justify-content: center;
+}
+
+form {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+form input {
+    width: 90%;
+    margin: 5px auto;
+    display: block;
+}
+
+.square {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+}
+  
+.show-square {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+  
+#fitness {
+    transform: translateX(-250px);
+    background-color:#f39c12;
+    display: flex;
+    flex-direction: column;
+}
+#nutrition {
+    transform: translateX(250px);
+    background-color: #2ecc71;
+    display: flex;
+    flex-direction: column;
+
+}
+#questionary{
+    transform: translateY(500px);
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+}
+#circle{
+    transform: translateY(250px);
+    background-color: #3498db;
+}
+
+.imgs:hover{
+    opacity: 0.5;
+}
+
+/*begin fitness web page*/
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    padding: 20px;
+}
+
+.text-block, .image-block {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    border:5px solid #f39c12;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+    border-radius: 8px;
+}
+
+
+
+.tips {
+    border-top: 5px solid #f39c12;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+    font-style: italic;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.fcolor{
+    color: #f39c12;
+    font-size: large;
+}
+
+/* begin nutrition web page */
+.content2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    padding: 20px;
+}
+
+.text-block2, .image-block2 {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    border:5px solid  #2ecc71;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+    border-radius: 8px;
+}
+
+.tips2 {
+    border-top: 5px solid  #2ecc71;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:  #f39c12;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+    font-style: italic;
+}
+
+#button1{
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+    background-color:  #2ecc71;
+
+}
+
+#button2{
+    padding: 5px 10px;
+    font-size: 20px;
+    color: white;
+    background-color:  #2ecc71;
+    
+}
+
+#bcolor1{
+    background-color:  #2ecc71;
+}
+
+#text-content1{
+    font-size: large;
+}
+
+#text-content2{
+    font-size: large;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.fcolor2{
+    color:  #2ecc71;
+}
+
+#text1, #text2, #image1, #image2{
+    color:#2ecc71;
+    font-size: large;
+}
+
+/* begin questionary*/
+.header4{
+    background-color: lightcoral;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color:white;
+}
+
+#submit:hover{
+    opacity: 0.5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+}
+
+form {
+    height: fit-content;
+    width: fit-content;
+    background-color: lightcoral;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: myfont;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 20px 20px rgba(234, 124, 124, 0.5);
+    position: relative;
+}
+
+fieldset{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+select, textarea, input{
+    display: block;
+    font-family: myfont;
+    display: block;
+    border-radius: 5px;
+}
+
+.tips3{
+    border-top: 5px solid  lightcoral;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#footerblock{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 5px solid lightcoral;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0);
+    font-style: italic;
+}
+
+#bcolor2{
+    background-color:  lightcoral;
+}
+
+#email:link{
+    color: lightcoral;
+    text-decoration: none;
+}
+
+#email:visited{
+    color: rgba(234, 124, 124, 0.5);
+}
+
+#email:hover{
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+#email:active{
+    background-color: lightgray;
+}
+
+/* web on different screen sizes */
+
+/*mobile screen*/
+@media screen and (max-width:480px){
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #3498db;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0);
+        font-size: smaller;
+        position: relative;
+    }
+
+    .square {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+        box-shadow: 0 2px 4px rgba(0,0,0);
+        font-size: smaller;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    #fitness {
+        transform: translateY(150px);
+        background-color:#f39c12;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #nutrition {
+        transform: translateY(-200px);
+        background-color: #2ecc71; 
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #questionary{
+        transform: translateY(85px);
+        background-color: lightcoral;
+        display: flex;
+        flex-direction: column;
+    }
+    #circle{
+        transform: translateY(125px);
+        background-color: #3498db;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; 
+        padding: 20px;
+    }
+
+    .content2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px; 
+        padding: 20px;
+    }
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: black;
+      outline: 5px dashed #000;
+      font-family: myfont;
+      margin: 0;
+      padding: 0;
+      background: black;
+    }
+
+    #footerblock{
+        padding: 10px 20px;
+        cursor: pointer;
+        border: 5px solid lightcoral;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0);
+        font-style: italic;
+        color:white
+    }
+
+    .header1 {
+        background:#3498db;
+        text-align: center;
+        padding: 10px;
+        font-size: 24px;
+        color: black;
+    }
+    
+    .header2 {
+        background:#f39c12;
+        text-align: center;
+        padding: 10px;
+        font-size: 24px;
+        color: black;
+    }
+    
+    .header3{
+        background:#2ecc71;
+        text-align: center;
+        padding: 10px;
+        font-size: 24px;
+        color: black;
+    }
+
+    .header4{
+        background-color: lightcoral;
+        text-align: center;
+        padding: 10px;
+        font-size: 24px;
+        color:black;
+    }
+  }

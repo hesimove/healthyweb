@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+
+    <header class="header4">
+        <h2>Questionary</h2>
+        <p>This will help us to know you better</p>
+        <p>> We will tailor a personalized fitness plan for you</p>
+    </header>
+
+    <main>
+        <form action="https://formspree.io/f/xknllbgl"
+    method="POST">
+        <label>
+            First name
+            <input type="text" name="first-name" required>
+        </label>
+ 
+        <label>
+            Last name
+            <input type="text" name="last-name" required>
+        </label>
+
+        <label>
+            Email
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Gender
+            <input type="text" name="gender" required>
+        </label>
+
+        <label>
+            Weight (kg)
+            <input type="number" name="weight" required>
+        </label>
+
+        <label>
+            What is your fitness goal?
+            <textarea name="message" rows="6" placeholder="Why do you want to work out?"></textarea>
+        </label>
+
+        <fieldset>
+            <legend>What age range are you?</legend>
+            <label>
+                <input type="radio" name="year" value="freshman">
+                5-12
+            </label>
+            <label>
+                <input type="radio" name="year" value="sophomore">
+                13-19
+            </label>
+            <label>
+                <input type="radio" name="year" value="junior">
+                20-39
+            </label>
+            <label>
+                <input type="radio" name="year" value="senior">
+                40+
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>How many hours you want to spend on exercise per week?</legend>
+            <label>
+                <input type="checkbox" name="topics" value="hours">
+                3-6
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="hours">
+                6-9
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="hours">
+                9-12
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="hours">
+                12+
+            </label>
+        </fieldset>
+
+        <label>
+                Do you want recieve messages/advertisements from us?
+            <select name="make-websites">
+                <option value="yes">Yes!</option>
+                <option value="no">No.</option>
+            </select>
+        </label>
+
+        <label>
+            Any suggestions for us?
+            <textarea name="message" rows="6" placeholder="Write your suggestions!"></textarea>
+        </label>
+        <div>
+            <input id="submit" type="submit" value="Submit">
+        </div>
+
+        <img src="questionary.jpg"  srcset="questionary.jpg 1024w, questionary-small.jpg 100w" sizes="(min-width:481px) 1024px, (max-width: 480px) 600px" alt="questionary">
+
+    </form>
+    </main>
+
+    <footer class="tips3">
+        <nav class="navigation">
+            <button id="bcolor2" onclick="window.location.href='homepage.html';">Go Home Page</button>
+        </nav>
+
+        <div id="footerblock">
+            <p>Contact Us: <a id="email" href="zk2160@nyu.edu">zk2160@nyu.edu</a></p>
+        </div>
+    </footer>
+
+
+    
+  </body>
+</html>
